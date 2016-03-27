@@ -29,4 +29,4 @@ if [ ! -f /data/db/mysql/ibdata1 ]; then
     killall -9 mysqld_safe
 fi
 
-mysqld --user=mysql
+mysqld_safe --user=mysql --datadir="/data/db/mysql"

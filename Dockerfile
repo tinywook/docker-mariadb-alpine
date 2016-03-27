@@ -1,5 +1,5 @@
 FROM alpine:edge
-MAINTAINER tim@haak.co
+MAINTAINER Tim Haak <tim@haak.co>
 
 ENV LANG="en_US.UTF-8" \
     LC_ALL="en_US.UTF-8" \
@@ -14,7 +14,6 @@ RUN apk -U upgrade && \
       && \
       rm -rf /tmp/src && \
       rm -rf /var/cache/apk/*
-
 
 ADD ./files/my.cnf /etc/mysql/my.cnf
 ADD ./files/start.sh /start.sh
