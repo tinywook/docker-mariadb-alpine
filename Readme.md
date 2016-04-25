@@ -1,1 +1,1 @@
-# docker mariasb using alpine
+# docker mariadb using alpine
